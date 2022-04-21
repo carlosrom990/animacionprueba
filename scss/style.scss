@@ -13,39 +13,40 @@ body {
   border-radius: 15px;
   position: relative;
   overflow: hidden;
+
   img {
     width: 100%;
-    height: 100%;
   }
 }
 .imgBanner::after {
   content: "";
   width: 100%;
-  height: 100%;
-  background-color: rgba(255, 254, 254, 0.096);
+  height: 98%;
+  background-color: rgba(255, 255, 255, 0.144);
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   transition: 1.2s;
+  overflow: hidden;
 }
 .imgBanner::before {
   content: "";
   width: 100%;
-  height: 100%;
-  background-color: rgba(255, 254, 254, 0.096);
+  height: 98%;
+  background-color: rgba(255, 255, 255, 0.144);
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   transition: 1.2s;
+  overflow: hidden;
 }
 .imgBanner:hover::after {
   z-index: 1;
   width: 0;
   transition: 1.2s;
   left: 50%;
-  /*   transform: scale(0); */
 }
 .imgBanner:hover::before {
   z-index: 1;
